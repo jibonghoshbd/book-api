@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ussing bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Search book</title>
+</head>
+
+<body class="bg-dark">
+    <!-- books content  -->
+    <section class="container pt-5">
+        <div class="d-sm-flex align-items-center">
+            <div class="img-left">
+                <img class="img-fluid" style="width: 1000px; padding:10px;" src="images/left-img.jpg" alt="">
+            </div>
+            <div class="welcome-content text-center text-white">
+                <h1>Welcome to Open Library</h1>
+                <p>The Open Library provides an exciting opportunity for anyone interested in libraries and their future
+                    in cyberspace. It is a new kind of library that is not limited to any point in space or stretch of
+                    time. You can linger, sprint, and return to the contents of your choice, and no one will tell you
+                    time's up as long as you wish to virtually remain. There are well-organized categories with a
+                    catalog (aka search bar) for easy access to desired content. The Open Library shares many elements
+                    with brick and mortar libraries culminating in the shared mission to connect people with resources
+                    for learning, research, and entertainment, and to make the journey as interesting and rewarding as
+                    possible....</p>
+            </div>
+            <div class="img-right">
+                <img class="img-fluid" style="width: 1000px; padding:10px; " src="images/right-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- search option  -->
+    <section class="container pt-5">
+        <div class="input-group mb-3">
+            <input id="input-filed" type="text" class="form-control" placeholder="Search Your Book Name"
+                aria-label="Search Your Book Name" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
+                id="button-addon2">Search</button>
+        </div>
+    </section>
+    <!-- error message  -->
+    <section class="container pt-5">
+        <div id="error-message" class="text-white text-center">
+
+        </div>
+    </section>
+    <!-- search restult message -->
+    <section class="container pt-2">
+        <div id="search-message" class="text-white text-center">
+
+        </div>
+    </section>
+    <!-- show book  -->
+    <section class="container pt-5">
+        <div id="show-book" class="row row-cols-1 row-cols-md-3 g-4 text-center">
+
+        </div>
+    </section>
+
+
+    <!-- ussing bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- usssing my script -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
